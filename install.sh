@@ -121,7 +121,7 @@ install_x-ui() {
         fi
     else
         last_version=$1
-        url="https://github.com/MHSanaei/3x-ui/releases/download/${last_version}/x-ui-linux-$(arch3xui).tar.gz"
+        url="https://github.com/xxtek/3x-ui/releases/download/${last_version}/x-ui-linux-$(arch3xui).tar.gz"
         echo -e "Begining to install x-ui $1"
         wget -N --no-check-certificate -O /usr/local/x-ui-linux-$(arch3xui).tar.gz ${url}
         if [[ $? -ne 0 ]]; then
